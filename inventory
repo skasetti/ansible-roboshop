@@ -10,3 +10,6 @@ web.practiceonline.online
 [redis]
 redis.practiceonline.online
 
+[user]
+user.practiceonline.online
+
