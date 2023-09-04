@@ -72,8 +72,8 @@
   - name: load mysql schema
     ansible.builtin.command: mysql -h mysql.practiceonline.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
 
-  - name: restart MySQL
+  - name: restart shipping
     ansible.builtin.service:
-      name: mysql
+      name: shipping
       state: restarted
       enabled: true
