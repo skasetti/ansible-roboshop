@@ -22,3 +22,6 @@ mysql.practiceonline.online
 [shipping]
 shipping.practiceonline.online
 
+[rabbitmq]
+rabbitmq.practiceonline.online
+
