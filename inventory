@@ -13,3 +13,6 @@ redis.practiceonline.online
 [user]
 user.practiceonline.online
 
+[cart]
+cart.practiceonline.online
+
