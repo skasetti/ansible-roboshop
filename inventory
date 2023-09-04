@@ -7,3 +7,6 @@ catalogue.practiceonline.online
 [web]
 web.practiceonline.online
 
+[redis]
+redis.practiceonline.online
+
