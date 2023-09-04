@@ -25,3 +25,6 @@ shipping.practiceonline.online
 [rabbitmq]
 rabbitmq.practiceonline.online
 
+[payment]
+payment.practiceonline.online
+
