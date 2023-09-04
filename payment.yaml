@@ -13,10 +13,10 @@
 
   - name: check roboshop user exist or not
     ansible.builtin.command: id roboshop
-    register: output # output is variable name
+    register: out #output is variable name
     ignore_errors: true
 
-  - when: output.rc !=0
+  - when: out.rc != 0
     name: create user roboshop
     become: yes # we need sudo access for this task only
     ansible.builtin.user:
@@ -26,7 +26,7 @@
     ansible.builtin.stat:
       path: /app
     register: directory
-  
+
   - name: print the directory stats
     ansible.builtin.debug:
       msg: "output: {{directory}}"
@@ -57,7 +57,7 @@
     ansible.builtin.systemd:
       daemon_reload: true
 
-   - name: restart payment
+  - name: restart payment
     ansible.builtin.service:
       name: payment
       state: restarted
